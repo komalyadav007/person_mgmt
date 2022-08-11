@@ -48,7 +48,7 @@ function getPost(){
         for(let index=0;index<9;index++){
             div.innerHTML+=`
             <div class="card col-3 m-1 mx-auto">
-            <img class="card-img-top" src="${post[con].email}">
+            <div class="card-img-top" src="${post[con].email}">
             <div class="card-body">
              <h5 class="card-title">${post[con].id}</h5>
              <p class="card-text">${post[con].name}</p>
