@@ -1,7 +1,13 @@
 body {
-    background-color: rgb(196, 232, 247);
+    background-color: #b2efb2;
     color: white;
 }
 button{
 width: 200px;;
+}
+footer{
+    background-color: gray;
+}
+#{
+    
 }
