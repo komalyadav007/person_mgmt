@@ -11,28 +11,26 @@ function getPost(){
         for(let index=0;index<10;index++){
             div.innerHTML+=`
             <div class="card col-4 m-1 mx-auto">
-            <h5 class="card-top">${post[con].id}
-            <span class="card-title">${post[con].name}</span></h5>
-            <div class="card-top">Username:"${post[con].username}"
-            <div class="card-body">Email:"${post[con].email}"
+            <h5 class="card-top">${post[con].id}.
+            <span class="card-title">${post[con].name}</span></h5><br>
+            <p class="card-top"><u>Username:</u> ${post[con].username}<br>
+            <u>Email:</u> ${post[con].email}<br>
+            <u>Phone:</u> ${post[con].phone}<br>
+            <u>Website:</u> ${post[con].website}<br>
              
-             <p class="card-text">Adress:"${post[con].address.street},
+            <u>Adress:</u> ${post[con].address.street},
              ${post[con].address.suite},
              ${post[con].address.city},
-             
-             ${post[con].address.zipcode}</p>
-             <p>
+             ${post[con].address.zipcode}
              ${post[con].address.geo.lat},
-             ${post[con].address.geo.lng}"</p>
-             <p>
-             <div class="card-body">Phone:"${post[con].phone}"
-             <div class="card-body">Website:"${post[con].website}"
-             <div class="card-body">Company:"${post[con].company.name},
+             ${post[con].address.geo.lng}<br>
+             
+             <u> Company:</u> ${post[con].company.name},
              ${post[con].company.catchPhrase},
-             ${post[con].company.bs}"
+             ${post[con].company.bs}<br>
+             
              
              </p>
-             </div>
              </div>
 
             `
